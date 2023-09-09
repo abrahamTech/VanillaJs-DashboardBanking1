@@ -1,0 +1,241 @@
+/* ROOT CSS Variables */
+:root {
+    --color-primary: #4707ea;
+    --color-danger: #ff0060;
+    --color-success: #22ca4b;
+    --color-warning: #f7d060;
+    --color-purple: #a063f5;
+
+    --color-white: #fff;
+    --color-light: #f0eff5;
+    --color-gray-light: #86848c;
+    --color-gray-dark: #56555e;
+    --color-dark: #27282f;
+
+    --color-info-dark: #7d8da1;
+    --color-dark-variant: #677483;
+    --color-background: #f3f3f3;
+
+    --color-primary-light: rgba(71, 7, 234, 0.2);
+    --color-danger-light: rgba(255, 0, 96, 0.2);
+    --color-success-light: rgba(34, 202, 75, 0.2);
+    --color-warning-light: rgba(247, 208, 96, 0.2);
+
+    --card-border-radius: 1.6rem;
+    --border-radius-1: 1rem;
+    --border-radius-2: 6px;
+
+    --card-padding: 1.6rem;
+    --padding-1: 1.2rem;
+    --padding-2: 8px;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    appearance: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 0.86rem;
+}
+
+h6 {
+    font-weight: 300;
+    font-size: 0.77rem;
+}
+
+small {
+    font-weight: 300;
+    font-size: 0.77rem;
+}
+
+p {
+    color: var(--color-gray-dark);
+    font-size: 0.86rem;
+}
+
+.text-muted {
+    color: var(--color-gray-light);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.warning {
+    color: var(--color-warning);
+}
+
+.purple {
+    color: var(--color-purple);
+}
+
+.bg-primary {
+    background: var(--color-primary);
+    box-shadow: 0 0.8rem 0.8rem var(--color-primary-light);
+}
+
+.bg-danger {
+    background: var(--color-danger);
+    box-shadow: 0 0.8rem 0.8rem var(--color-danger-light);
+}
+
+.bg-success {
+    background: var(--color-success);
+    box-shadow: 0 0.8rem 0.8rem var(--color-success-light);
+}
+
+.bg-warning {
+    background: var(--color-warning);
+    box-shadow: 0 0.8rem 0.8rem var(--color-warning-light);
+}
+
+.bg-purple {
+    background: var(--color-purple);
+    box-shadow: 0 0.8rem 0.8rem var(--color-purple-light);
+}
+
+.bg-dark {
+    background: var(--color-dark);
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+.dark-mode-variables {
+    --color-background: #222;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+a {
+    color: var(--color-dark);
+}
+
+b {
+    color: var(--color-dark);
+}
+
+*/
+
+/* ********* NAVBAR ********* */
+
+nav {
+    width: 100%;
+    background: var(--color-white);
+    padding: 1rem 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 96%;
+    margin: 0 auto;
+    background: black;
+}
+
+nav .container .logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    /* width: 7rem; */
+}
+
+nav .container .logo img {
+    width: 3rem;
+    height: auto;
+}
+
+nav .container .logo h2 {
+    font-size: 1.5rem;
+}
+
+
+nav .search-bar {
+    background: var(--color-light);
+    padding: var(--padding-2) var(--card-padding);
+    width: 32vw;
+    border-radius: var(--border-radius-2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-gray-light);
+    /* position: absolute;
+    left: 15%; */
+}
+
+nav .search-bar input[type="search"] {
+    color: var(--color-dark);
+    background: transparent;
+    width: 100%;
+}
+
+nav .search-bar input[type="search"]::placeholder {
+    color: var(--color-gray-dark);
+}
+
+.img-user {
+    width: 100px;
+    height: auto;
+}
