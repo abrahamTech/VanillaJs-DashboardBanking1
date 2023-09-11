@@ -54,6 +54,7 @@ body {
     overflow-x: hidden;
     color: var(--color-dark);
     background-color: var(--color-background);
+    font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -192,7 +193,7 @@ nav .container {
     position: relative;
     width: 96%;
     margin: 0 auto;
-    background: black;
+    /* background: black; */
 }
 
 nav .container .logo {
@@ -235,7 +236,59 @@ nav .search-bar input[type="search"]::placeholder {
     color: var(--color-gray-dark);
 }
 
-.img-user {
-    width: 100px;
-    height: auto;
+/* Profile Area 21:00*/
+
+nav .profile-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+nav .profile-area .theme-btn {
+    display: flex;
+    background: var(--color-light);
+    width: 5rem;
+    height: 2rem;
+    border-radius: var(--border-radius-2);
+    cursor: pointer;
+}
+
+nav .profile-area .theme-btn span { 
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+nav .profile-area .theme-btn .active {
+    background: var(--color-dark);
+    border-radius: var(--border-radius-2);
+    color: var(--color-white);
+}
+
+nav .profile-area .profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav .profile-area .profile-photo {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+nav .profile-area .profile-photo img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;    
+}
+
+nav .profile-area button {
+    display: none;
 }
