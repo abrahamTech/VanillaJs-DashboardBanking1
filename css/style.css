@@ -424,6 +424,7 @@ main section.middle .cards .card {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 2rem 3rem var(--color-danger-light);
+    min-width: 24rem;
     transition: all 300ms ease;
 }
 
