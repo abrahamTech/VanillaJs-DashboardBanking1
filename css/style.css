@@ -741,6 +741,7 @@ main .recent-transactions .card-details .card img{
         width: 22rem;
         height: 100vh;
         box-shadow: 2rem 0 2rem var(--color-primary-light);
+        display: none;
     }
 
     main aside button#close-btn {
@@ -765,5 +766,25 @@ main .recent-transactions .card-details .card img{
 
     main aside .updates {
         display: none;
+    }
+
+    /* Middle Section */
+
+    main section.middle .cards {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    main section.middle .cards .card {
+        max-width: 26rem; 
+        min-width: 24rem;
+    }
+
+    main canvas {
+        margin: 3rem 0 1rem;
+    }
+
+    main section.right .recent-transactions {
+        margin-top: 3rem;
     }
 };
