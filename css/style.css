@@ -321,7 +321,7 @@ main {
     display: grid;
     grid-template-columns: 16rem auto 30rem;
     gap: 2rem; /*IMPORTANT ADD Gap to work correct the "main" in grid-template-columns: 16rem auto 30rem; */
-    width: 96%;
+    width: 94%;
     margin: 1rem auto 4rem;
 }
 
@@ -334,6 +334,13 @@ main aside {
     flex-direction: column;
     justify-content: space-between;
     height: 88vh;
+    animation: showSidebar 400ms ease forwards;
+}
+
+@keyframes showSidebar {
+    to {
+        left: 0;
+    }
 }
 
 main aside button#close-btn {
@@ -817,5 +824,5 @@ main .recent-transactions .card-details .card img{
         margin-top: 3rem;
         gap: 1.4rem;
     }
-    
+
 }
