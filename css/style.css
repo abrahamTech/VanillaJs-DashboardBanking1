@@ -604,6 +604,7 @@ canvas#chart {
 main section.right .investments {
     background: var(--color-white);
     border-radius: var(--card-border-radius);
+    justify-content: center;
 }
 
 main section.right .investments img {
@@ -711,7 +712,7 @@ main .recent-transactions .card-details .card img{
 }
 
 
-/* ********* RECENT TRANSACTIONS ********* */
+/* ********* MEDIA QUERIES for TABLETS********* */
 
 @media screen and (max-width: 1024px) {
     nav .search-bar {
@@ -726,6 +727,7 @@ main .recent-transactions .card-details .card img{
         display: inline;
         background: transparent;
         color: var(--color-dark);
+        margin-right: 1.5rem;
     }
 
     main {
@@ -787,4 +789,33 @@ main .recent-transactions .card-details .card img{
     main section.right .recent-transactions {
         margin-top: 3rem;
     }
-};
+}
+
+/* ********* MEDIA QUERIES for MOBILES ********* */
+
+@media screen and (max-width: 600px) {
+    body {
+        background: rebeccapurple;
+    }
+
+    nav .profile-area {
+        gap: 2.6rem;
+    }
+
+    nav .profile h4,
+    nav .profile span {
+        display: none;
+    }
+
+    main section.middle .cards {
+        grid-template-columns: 1fr;
+    }
+
+    main section.middle .fast-payment {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 3rem;
+        gap: 1.4rem;
+    }
+    
+}
