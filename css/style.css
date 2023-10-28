@@ -52,7 +52,7 @@ body {
     width: 100vw;
     height: 100vh;
     user-select: none;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     color: var(--color-dark);
     background-color: var(--color-background);
     font-family: 'Poppins', sans-serif;
@@ -334,13 +334,6 @@ main aside {
     flex-direction: column;
     justify-content: space-between;
     height: 88vh;
-    animation: showSidebar 400ms ease forwards;
-}
-
-@keyframes showSidebar {
-    to {
-        left: 0;
-    }
 }
 
 main aside button#close-btn {
@@ -744,14 +737,29 @@ main .recent-transactions .card-details .card img{
     main aside {
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         z-index: 3;
         background: var(--color-white);
         width: 22rem;
         height: 100vh;
         box-shadow: 2rem 0 2rem var(--color-primary-light);
-        display: none;
+        transition: left 0.8s;
+        animation: showSidebar .5s forwards;
     }
+
+/*
+     @keyframes noSidebar {
+        to {
+            display: none;
+        }
+    }
+
+    @keyframes showSidebar {
+        to {
+            display: block;
+        }
+    } */
+    
 
     main aside button#close-btn {
         display: inline-block;

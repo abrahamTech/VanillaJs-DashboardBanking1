@@ -32,10 +32,30 @@ const menuBtn = document.querySelector(".menu-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("aside");
 
+//With keyframes (Orignial Code)
+// menuBtn.addEventListener("click", () => {
+//     sidebar.style.display = "block";
+// });
+
+// closeBtn.addEventListener("click", () => {
+//     sidebar.style.display = "none";
+// })
+
+//With Transitions
 menuBtn.addEventListener("click", () => {
-    sidebar.style.display = "block";
+    // sidebar.classList.toggle("hidden");
+    if (sidebar.style.left === "-100%" || !sidebar.style.left) {
+        sidebar.style.left = "0";
+    } else {
+        //You can also make it close with the same button
+        //sidebar.style.left = "-100%";
+    }
 });
 
+// Add an event to the button inside the menu to close the dropdown
 closeBtn.addEventListener("click", () => {
-    sidebar.style.display = "none";
-})
+    sidebar.style.left = "-100%"; // Close the menu with the animation
+    /*setTimeout(() => {
+        sidebar.classList.add("hidden");
+    }, 1200); */ // Wait for the animation to finish before hiding the menu
+});
