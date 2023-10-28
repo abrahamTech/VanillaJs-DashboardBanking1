@@ -59,3 +59,15 @@ closeBtn.addEventListener("click", () => {
         sidebar.classList.add("hidden");
     }, 1200); */ // Wait for the animation to finish before hiding the menu
 });
+
+
+//Change Theme
+
+const themeBtn = document.querySelector(".theme-btn");
+
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+
+    themeBtn.querySelector("span:first-child").classList.toggle("active");
+    themeBtn.querySelector("span:last-child").classList.toggle("active");
+});
