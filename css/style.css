@@ -49,10 +49,10 @@ html {
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     user-select: none;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     color: var(--color-dark);
     background-color: var(--color-background);
     font-family: 'Poppins', sans-serif;
@@ -727,7 +727,6 @@ main .recent-transactions .card-details .card img{
         display: inline;
         background: transparent;
         color: var(--color-dark);
-        margin-right: 1.5rem;
     }
 
     main {
@@ -809,9 +808,6 @@ main .recent-transactions .card-details .card img{
 /* ********* MEDIA QUERIES for MOBILES ********* */
 
 @media screen and (max-width: 600px) {
-    body {
-        background: rebeccapurple;
-    }
 
     nav .profile-area {
         gap: 2.6rem;
