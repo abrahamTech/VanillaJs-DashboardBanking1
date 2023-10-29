@@ -719,6 +719,17 @@ main .recent-transactions .card-details .card img{
     height: auto;
 }
 
+/* ********* PRE MEDIA QUERIES for Right Section********* */
+
+@media (max-width: 1400px) and (min-width: 1025px) {
+    main {
+        grid-template-columns: 16rem auto; /* Dos columnas: aside a la izquierda, secciones a la derecha */
+    }
+    
+    main section.right {
+        grid-column: 2; /* La sección 'right' ocupa la segunda columna (a la derecha) */
+    }
+}
 
 /* ********* MEDIA QUERIES for TABLETS********* */
 
